@@ -4,11 +4,11 @@ t = []
 x = []
 y = []
 for line in file:
-
+#[1,2,3]
     count = 0
     for element in line[1:-1]:
         if element not in ',[]':
-            print(element)
+  #          print(element)
             if count == 0:
                 t.append(float(element))    
                 count += 1
@@ -18,7 +18,7 @@ for line in file:
             elif count == 2:
                 y.append(float(element))
 
-           # lst.append(float(element))
+#1st plot           # lst.append(float(element))
 plt.subplot(221)#.subploot(nrows,ncolumns,plot_number)first <= third <= second;212
 plt.plot(x,t,'r-',label='x-t graph',)
 plt.xlabel("x-axis")
